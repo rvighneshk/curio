@@ -1,0 +1,23 @@
+# Render blueprint. Add the two API keys in the dashboard (sync: false keeps them out of git).
+# Free instances have an ephemeral disk: sessions reset on redeploy. For durable storage use a
+# paid plan with a disk mounted at /data and set CURIO_DB_PATH=/data/curio.db.
+services:
+  - type: web
+    name: curio
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: QLOO_API_KEY
+        sync: false
+      - key: QLOO_BASE_URL
+        value: https://hackathon.api.qloo.com
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CURIO_DB_PATH
+        value: /tmp/curio.db
+      - key: CURIO_TRUST_PROXY
+        value: "1"
