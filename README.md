@@ -11,7 +11,7 @@ Curio explores how cultural intelligence can support both individual discovery a
 
 ## Links
 
-- **Live Demo:** YOUR_LIVE_DEMO_URL
+- **Live Demo:** https://curio-w8sz.onrender.com
 - **Public Source Repository:** https://github.com/rvighneshk/curio
 - **License:** [MIT License](LICENSE)
 
@@ -173,7 +173,7 @@ Curio is designed to be deployed as a publicly accessible web application. A pro
 - Handle external API failures and optional AI features gracefully.
 - Provide access to the functional application without private permissions.
 
-**Live Demo:** YOUR_LIVE_DEMO_URL
+**Live Demo:** https://curio-w8sz.onrender.com
 
 ## Privacy and Responsible Use
 
