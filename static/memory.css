@@ -1,0 +1,86 @@
+
+.memory-panel{display:flex;flex-direction:column;gap:18px}
+.memory-presets{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.memory-preset{display:flex;flex-direction:column;gap:4px;text-align:left;border:1px solid #a68bff3d;background:#a68bff0f;border-radius:14px;padding:12px 15px;color:var(--text);max-width:340px;transition:.18s}
+.memory-preset:hover:not(:disabled){border-color:#a68bffaa;transform:translateY(-2px)}
+.memory-preset strong{font-size:14px}.memory-preset small{color:var(--muted);font-size:12px;line-height:1.5}
+.memory-form{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:14px}
+.memory-field{display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:1.2px;color:var(--muted);font-weight:700}
+.memory-input{background:#0b0b11;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:13px 14px;font-size:16px;letter-spacing:0;font-weight:500;min-width:0}
+.memory-input:focus{outline:2px solid #a68bffaa;outline-offset:2px}
+.search-row input:focus-visible{outline:0;box-shadow:none}
+.chip-cat{color:var(--purple);font-size:10px;letter-spacing:.5px}
+.memory-actions{align-items:center}.memory-note{color:var(--muted);font-size:12px;line-height:1.65;max-width:560px;margin:0}
+.memory-section{margin-top:30px}.memory-section-head{margin-bottom:12px}
+.memory-section-head h3{font-size:21px;margin:0 0 4px}.memory-section-head p{color:var(--muted);font-size:14px;margin:0}
+.memory-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.memory-card{border:1px solid #ffffff14;border-radius:18px;padding:16px;background:linear-gradient(145deg,#171722,#111119);display:flex;flex-direction:column;gap:12px;min-width:0}
+.memory-card-top{display:flex;gap:14px;align-items:flex-start}
+.memory-art{width:76px;height:96px;flex:0 0 76px;border-radius:10px;object-fit:cover;background:linear-gradient(145deg,#28223f,#171720);display:flex;align-items:center;justify-content:center;color:#9182c4;font-size:22px;overflow:hidden}
+.memory-card h4{font:700 18px/1.35 "Poppins",sans-serif;margin:3px 0 6px;overflow-wrap:anywhere}
+.memory-desc{color:#b9b6ca;font-size:13px;line-height:1.7;margin:0}
+.memory-songs{margin:0;font-size:13px;color:#d9d6e6}.memory-songs span{color:#b8a7ff;font-size:10px;letter-spacing:1.3px;font-weight:700;margin-right:6px;text-transform:uppercase}
+.memory-prompt{margin:0;padding:11px 14px;border-left:3px solid var(--purple);background:#a68bff12;border-radius:0 12px 12px 0;font-size:15px;line-height:1.7;color:#f1ecff}
+.memory-prompt span{display:block;font-size:10px;letter-spacing:1.4px;font-weight:700;color:#b8a7ff;margin-bottom:3px;text-transform:uppercase}
+.memory-listen{display:flex;gap:8px;flex-wrap:wrap}.memory-listen .mini-button{text-decoration:none;display:inline-flex;align-items:center}
+.memory-embed{margin-top:-4px}.memory-embed iframe{border:0;border-radius:12px;display:block}
+.memory-why{font-size:13px;color:#b9b6ca}.memory-why p{margin:4px 0 8px;line-height:1.7}
+.memory-reactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+.reaction-btn{flex:1 1 90px;border:1px solid var(--line);background:#ffffff05;color:#e4e1f0;border-radius:12px;padding:11px 8px;font-size:13px;font-weight:600;min-height:44px;transition:.15s}
+.reaction-btn:hover{border-color:#a68bff88}
+.reaction-btn.active.love{background:#83e8ba22;border-color:#83e8baaa;color:#c8ffe6}
+.reaction-btn.active.ok{background:#a68bff22;border-color:#a68bffaa;color:#e4dcff}
+.reaction-btn.active.upset{background:#ff9fba1f;border-color:#ff9fbaaa;color:#ffd3df}
+.adapt-banner{margin:14px 0 4px;padding:14px 18px;border:1px solid #83e8ba55;background:#83e8ba10;border-radius:14px;font-size:14px;color:#d9fff0}
+.adapt-banner ul{margin:8px 0 0;padding-left:20px;display:grid;gap:5px;line-height:1.6}
+.starter-list{margin:0;padding-left:22px;display:grid;gap:9px;font-size:15px;line-height:1.7;color:#e4e1f0}.starter-list.tips{color:#c9c5db;font-size:14px}
+.memory-controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.memory-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px!important}
+@media(prefers-reduced-motion:reduce){.memory-preset,.reaction-btn{transition:none}}
+
+
+.memory-guidance-section{margin-top:36px;padding-top:25px;border-top:1px solid #ffffff12}
+.memory-guidance-section .memory-section-head{margin-bottom:16px}
+.memory-section-kicker{display:block;margin-bottom:7px;color:#b8a7ff;font-size:10px;font-weight:700;letter-spacing:1.55px}
+.memory-guidance-section .memory-section-head h3,.caregiver-heading h3{font-size:22px;line-height:1.35;margin:0 0 6px}
+.memory-guidance-section .memory-section-head p,.caregiver-heading p{max-width:650px;margin:0;color:#aaa7bc;font-size:13px;line-height:1.75}
+.conversation-starters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.conversation-card{position:relative;display:flex;flex-direction:column;min-width:0;min-height:185px;padding:17px 18px;border:1px solid #a68bff27;border-radius:16px;background:linear-gradient(145deg,#1b1928,#12121a);overflow:hidden;transition:border-color .2s,transform .2s,background .2s}
+.conversation-card::after{content:"";position:absolute;right:-45px;bottom:-75px;width:150px;height:150px;border-radius:50%;background:#a68bff0b;pointer-events:none}
+.conversation-card:hover{transform:translateY(-2px);border-color:#a68bff65;background:linear-gradient(145deg,#211d30,#13131d)}
+.conversation-card-top{display:flex;align-items:center;gap:9px;margin-bottom:15px}
+.conversation-card-icon{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border-radius:9px;background:#a68bff17;color:#c7b7ff;font-size:17px}
+.conversation-card-label{color:#bbaaff;font-size:9px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.conversation-card-index{margin-left:auto;color:#6e6884;font-size:10px;font-weight:700;letter-spacing:1px}
+.conversation-question{position:relative;z-index:1;margin:0;color:#f1edff;font-size:15px;font-weight:600;line-height:1.7}
+.conversation-context{position:relative;z-index:1;margin:auto 0 0;padding-top:13px;color:#9995aa;font-size:11px;line-height:1.65}
+.caregiver-companion{margin-top:28px;padding:22px;border:1px solid #ef8ed827;border-radius:19px;background:radial-gradient(ellipse at 0% 0%,#ef8ed810,transparent 60%),linear-gradient(135deg,#1b1722,#12121a)}
+.caregiver-heading{display:flex;align-items:flex-start;gap:14px;margin-bottom:17px}
+.caregiver-mark{display:grid;place-items:center;width:43px;height:43px;flex:0 0 43px;border:1px solid #ef8ed84d;border-radius:14px;background:#ef8ed813;color:#f0a9df;font-size:24px}
+.caregiver-heading .memory-section-kicker{color:#e7a0d5}
+.caregiver-heading h3{margin-bottom:5px}
+.caregiver-guidance-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.caregiver-tip-card{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:14px;border:1px solid #ffffff10;border-radius:13px;background:#ffffff04}
+.caregiver-tip-icon{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border-radius:9px;background:#ef8ed812;color:#e7a0d5;font-size:16px}
+.caregiver-tip-label{display:block;margin:1px 0 4px;color:#e7a0d5;font-size:9px;font-weight:700;letter-spacing:1.05px;text-transform:uppercase}
+.caregiver-tip-card p{margin:0;color:#d0ccda;font-size:12px;line-height:1.75}
+@media(prefers-reduced-motion:reduce){.conversation-card{transition:none}}
+
+
+.memory-return-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 18px;padding:10px 13px;border:1px solid #a68bff35;border-radius:13px;background:#a68bff0b}
+.memory-return-bar span{color:var(--muted);font-size:11px;letter-spacing:.4px}
+@media(max-width:520px){.memory-return-bar{align-items:flex-start;flex-direction:column}}
+
+
+
+
+.memory-warning { margin:14px 0; padding:13px 16px; border:1px solid #b88b3d66; border-radius:13px; background:#b88b3d12; color:#f2d39a; }
+.memory-warning strong { display:block; margin-bottom:4px; }
+.memory-warning p { margin:0; color:var(--muted, #c4c1d3); line-height:1.5; }
+
+
+.memory-presets { gap: 12px; margin-top: 14px; }
+.memory-preset { min-width: min(100%, 280px); max-width: 390px; padding: 16px 19px; gap: 6px; }
+.memory-preset strong { font-size: 15px; line-height: 1.45; }
+.memory-preset small { font-size: 13px; line-height: 1.55; }
+@media (max-width: 620px) { .memory-preset { width: 100%; max-width: none; } }

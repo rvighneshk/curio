@@ -1,0 +1,24 @@
+
+.discovery-why{min-width:0;margin:9px 0 3px}
+.discovery-why .path-link-label{display:block}
+.discovery-why p{margin:4px 0 7px;line-height:1.7}
+.rec-why{padding:9px 11px;border-left:2px solid #a68bff66;border-radius:0 10px 10px 0;background:#a68bff08}
+.rec-why p{font-size:12px;color:#ded9ed}
+.memory-why.discovery-why{margin:0;font-size:13px;color:#b9b6ca}
+.memory-why.discovery-why p{margin:4px 0 8px}
+.discovery-trace{margin-top:16px}
+.discovery-trace summary{line-height:1.6}
+.discovery-adaptation{margin:14px 0 4px}
+.discovery-adaptation strong{display:block;color:#d9fff0}
+.discovery-reactions{align-items:stretch}
+.discovery-reactions .reaction-btn{min-height:44px}
+.evidence-row[aria-label="Evidence"] .evidence-label{letter-spacing:.04em}
+@media(max-width:620px){
+  .rec-why{padding:8px 9px}
+  .discovery-trace{padding:10px 12px}
+}
+
+.discovery-feedback-guidance{grid-column:1/-1;margin:0 0 4px;padding:11px 14px;border:1px solid #a68bff24;border-radius:12px;background:linear-gradient(110deg,#a68bff0d,#ffffff03)}
+.discovery-feedback-guidance strong{display:block;color:#c9bbff;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.discovery-feedback-guidance p{margin:4px 0 0;color:#aaa7bc;font-size:12px;line-height:1.65}
+#memoryReactionHint .discovery-feedback-guidance{margin-top:10px}
